@@ -1,0 +1,149 @@
+:root {
+  --background-dark: #292F36;
+  --white: #FFFCFF;
+  --white-med: #F7F3F3;
+  --white-darker: #efe8e8;
+  --dark-text: #292F36;
+  --turqoise: #4ECDC4;
+}
+
+.container {
+  margin: 0px auto;
+  max-width: 850px;
+  padding: 0px 150px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  background-color: var(--background-dark);
+}
+
+#profile-header {
+  margin-bottom: 0px;
+}
+
+#subheader {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.card {
+  background-color: var(--white);
+  padding: 50px;
+  box-shadow: 10px 10px 20px var(--white-darker);
+  border-radius: 4px;
+  margin: 40px 0px;
+  text-align: center;
+}
+
+#profile-pic {
+  max-width: 50%;
+  padding: 30px 0px 0px 0px;
+}
+
+#description {
+  font-size: 1.0rem;
+  text-align: left;
+}
+
+.list {
+  line-height: 35px;
+}
+
+#some-div {
+  margin: 50px 60px 0px 60px;
+}
+
+#some-buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#some-buttons, a {
+  color: var(--background-dark);
+  text-decoration: none;
+}
+
+#some-buttons, a:hover {
+  color: var(--white-darker);
+  transition-duration: 0.5s;
+}
+
+#email {
+  width: 50%;
+  padding: 0.50rem;
+  box-sizing: border-box;
+  border-radius: 3px;
+  border: 1px solid #dddddd;
+  outline: none;
+  background: var(--white-darker);
+  transition: background 0.2s, border-color 0.2s;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
+
+#email:hover {
+  border-color: var(--background-dark);
+  background: var(--white-med);
+}
+
+#email:focus {
+  border-color: var(--background-dark);
+  background: var(--white-med);
+}
+
+#submit-btn {
+  width: 20%;
+  padding: 0.5rem 0.5rem;
+  font-size: 0.9rem;
+  color: var(--background-dark);
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+  background: var(--white-darker);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
+
+#submit-btn:hover {
+  background: var(--white-med);
+}
+
+
+/* Responsiveness */
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 650px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 550px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 450px;
+  }
+}
